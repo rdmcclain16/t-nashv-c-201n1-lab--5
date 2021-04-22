@@ -6,14 +6,14 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-function sum(a, b) { //eslint-disable-line
-let theSum = a + b
-let message = 'the sum of ' + a + ' and ' + b + ' is ' + theSum
+function sum(a, b, c) { //eslint-disable-line
+let theSum = a + b + c
+let message = 'the sum of ' + a + ', c and ' + b + ' is ' + theSum
 return [theSum, message]
 }
 
 // Here is the test for sum(); uncomment it to run it
-console.log(sum(4, 6))
+// console.log(sum(7, 5))
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -24,12 +24,14 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a, b) { //eslint-disable-line
-
-}
-
-// Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+function multiply(a, b, c) { //eslint-disable-line
+    let multiply = a * b * c
+//     let message = 'The product of ' + a + ' and ' + b + ' is ' + multiply
+//     return [multiply, message]
+    }
+    
+//     // Here is the test for multiply(); uncomment it 
+    // console.log(multiply(3,7))
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -43,11 +45,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+let theAnswer = sum(a+b, c)[0]
+let theAnswer2 = multiply(a+b, c)
+let message3 = a + 'and ' + b + ' and ' + c + ' sum to ' + theAnswer
+let message2 = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + theAnswer2
+return (theAnswer, theAnswer2, message3, message2)
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+console.log(sumAndMultiply(4,7,5))
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
