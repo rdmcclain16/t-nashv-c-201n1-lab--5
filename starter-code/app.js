@@ -44,16 +44,16 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { //eslint-disable-line
-let theAnswer = sum(a+b, c)[0]
-let theAnswer2 = multiply(a+b, c)
-let message3 = a + 'and ' + b + ' and ' + c + ' sum to ' + theAnswer
-let message2 = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + theAnswer2
-return (theAnswer, theAnswer2, message3, message2)
-}
+// // function sumAndMultiply(a, b, c) { //eslint-disable-line
+// let theAnswer = sum(a+b, c)[0]
+// let theAnswer2 = multiply(a+b, c)
+// let message3 = a + 'and ' + b + ' and ' + c + ' sum to ' + theAnswer
+// let message2 = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + theAnswer2
+// return (theAnswer, theAnswer2, message3, message2)
+// }
 
-// Here is the test for sumAndMultiply(); uncomment it to run it
-console.log(sumAndMultiply(4,7,5))
+// // Here is the test for sumAndMultiply(); uncomment it to run it
+// console.log(sumAndMultiply(4,7,5))
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -68,12 +68,15 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
+    for (var i = 0, sum = 0; i < testArray.length; sum += testArray[i++]);
+    console.log('2, 3, 4' + ' was passed in as an array of number, and ' + sum + ' is their sum.')
 
 }
+sumArray(testArray);
+
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
